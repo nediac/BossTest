@@ -26,9 +26,11 @@ loops.everyInterval(2000, function () {
     }
 })
 basic.forever(function () {
+    ME.set(LedSpriteProperty.Blink, 150)
+})
+basic.forever(function () {
     Boss.set(LedSpriteProperty.Brightness, 100)
-    Boss2.set(LedSpriteProperty.Brightness, 100)
-    ME.set(LedSpriteProperty.Brightness, 1)
+    ME.set(LedSpriteProperty.Brightness, 150)
 })
 basic.forever(function () {
     basic.pause(15000)
